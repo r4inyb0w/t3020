@@ -19,3 +19,11 @@ Note, however, there is some missing data in some of the rows. The first few lin
 ### Errors
 
 There are three deliberate errors, marked E1, E2 and E3. Finding other (non-deliberate and unknown to me)  errors will get a bonus -- clearly add below this line in your copy of the README what the errors are and how you fixed them.
+
+E1: the range was initially 2:9, this left out the T1 column. I changed it to 1:9 to ensure it would calculate the total total correctly.
+
+E2: this condition said <=, however for increasing monotonically the current number can be equal to the previous number, therefore I removed the = so the condition just read: curr[i] <  prev[i]
+
+    Additionally, on line 28, the range was 9, I changed this value to 8 since the T8 column does not need to increase monotonically.
+
+E3: I added [0:9] so that the OTHER column would not be checked if empty since missing data is only checked for columns TALL and T1-T8.
