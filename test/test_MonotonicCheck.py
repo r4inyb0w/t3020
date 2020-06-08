@@ -16,7 +16,7 @@ class DataMungerMonotonicTest(unittest.TestCase):
 
         n = 4
 
-        self.assertEqual(captureOutput.getvalue(), 'Monotonic error at column 0 comparing lines 22 and 23   values 712 and 800\n')
+        self.assertEqual(captureOutput.getvalue(), 'Monotonic error at column 0 comparing lines 21 and 22   values 712 and 800\n')
 
 if __name__== '__main__':
     unittest.main()
